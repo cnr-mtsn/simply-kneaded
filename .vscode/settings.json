@@ -1,0 +1,9 @@
+{
+	"prettier.arrowParens": "avoid",
+	"prettier.printWidth": 120,
+	"prettier.semi": false,
+	"prettier.useTabs": true,
+	"terminal.integrated.fontSize": 16,
+	"editor.fontSize": 16,
+	"editor.fontFamily": "operator Mono, Menlo, Monaco, 'Courier New', monospace"
+}
