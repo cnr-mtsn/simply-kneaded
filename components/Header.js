@@ -9,9 +9,9 @@ export default function Header() {
 			<Link href="/">
 				<a>
 					<Image
-						src="/logo.png"
+						src="/textLogo.png"
 						height="100"
-						width="100"
+						width="500"
 						loading="eager"
 						alt="Simply Kneaded Massage Therapy"
 					/>
