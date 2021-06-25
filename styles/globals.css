@@ -13,19 +13,79 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 }
+h1 {
+	color: var(--gold);
+	font-family: Spartan, Roboto;
+	font-size: 2rem;
+	margin-bottom: 0.5rem;
+}
 
 main {
 	padding: 3rem;
 	min-height: calc(100vh - 200px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+.landingContainer {
+	border: 4px solid var(--gold);
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 6rem;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(15px);
+}
+.landingContainer div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.button {
+	border: 2px solid var(--gold);
+	border-radius: 1rem;
+	padding: 0.5rem 1rem;
+	font-size: 1.4rem;
+	color: var(--gold);
+	background: var(--white);
+	margin: 2rem 0 0 0;
+}
+
 @media (min-width: 769px) {
 	main {
 		padding: 5rem;
+	}
+	h1 {
+		font-size: 3rem;
+	}
+	.landingContainer {
+		padding: 2rem 4rem;
+	}
+	.mainHeader {
+		font-size: 2.5rem;
+	}
+	.button {
+		font-size: 1.6rem;
 	}
 }
 @media (min-width: 1025px) {
 	main {
 		padding: 10rem;
+	}
+	h1 {
+		font-size: 4rem;
+	}
+	.landingContainer {
+		padding: 2rem 8rem;
+	}
+	.mainHeader {
+		font-size: 3rem;
+	}
+	.button {
+		font-size: 1.8rem;
 	}
 }
 

@@ -1,10 +1,15 @@
-import React from "react"
+// The following import prevents a Font Awesome icon server-side rendering bug,
+// where the icons flash from a very large icon down to a properly sized one:
+import "@fortawesome/fontawesome-svg-core/styles.css"
+// Prevent fontawesome from adding its CSS since we did it manually above:
+import { config } from "@fortawesome/fontawesome-svg-core"
+import React, { useState } from "react"
 import Head from "next/head"
-import styles from "../styles/Page.module.css"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import { useRouter } from "next/router"
 import formatPath from "../utils/formatPath"
+config.autoAddCss = false;
 
 export default function Page({ children }) {
 	const router = useRouter()
@@ -32,7 +37,6 @@ export default function Page({ children }) {
 					rel="stylesheet"
 				/>
 			</Head>
-
 			<Header />
 			<main>{children}</main>
 			<Footer />
