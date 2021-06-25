@@ -3,7 +3,7 @@ import styles from '../styles/ContactForm.module.css'
 
 export default function ContactForm() {
 	return (
-		<form name="contact" netlify method="POST" action="/success" className={styles.container}>
+		<form name="contact" data-netlify="true" method="POST" action="/success" className={styles.container}>
 			<h1>Come, relax with us</h1>
 			<input type="hidden" name="form-name" value="contact" />
 			<label htmlFor="name" value="name" />
