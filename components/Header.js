@@ -13,8 +13,8 @@ export default function Header() {
 				<a>
 					<Image
 						src="/textLogo.png"
-						height="120"
-						width="300"
+						height="60"
+						width="200"
 						loading="eager"
 						alt="Simply Kneaded Massage Therapy"
 					/>

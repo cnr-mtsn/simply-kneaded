@@ -22,7 +22,7 @@ h1 {
 
 main {
 	padding: 3rem;
-	min-height: calc(100vh - 200px);
+	min-height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
